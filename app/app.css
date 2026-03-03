@@ -13,3 +13,122 @@ body {
     color-scheme: dark;
   }
 }
+
+.timer {
+  @apply flex flex-col items-center justify-center space-y-4;
+  @apply w-full;
+}
+
+button,
+.btn {
+  @apply px-4 py-2 rounded-md;
+  @apply cursor-pointer inline-block;
+}
+
+.active {
+  @apply bg-blue-500 text-white;
+  @apply font-bold;
+}
+
+.add {
+  @apply bg-green-500 text-white;
+}
+
+.start {
+  @apply bg-blue-500 text-white;
+}
+
+.pause {
+  @apply bg-yellow-500 text-white;
+}
+
+.reset {
+  @apply bg-red-500 text-white;
+}
+
+.close {
+  @apply bg-gray-500 text-white;
+}
+
+.settings {
+  @apply bg-green-500 text-white;
+}
+
+.settings-modal {
+  @apply fixed inset-0 flex items-center justify-center;
+  @apply bg-black/50;
+}
+
+.settings-modal-content {
+  @apply bg-white dark:bg-gray-950 p-4 rounded-md;
+  @apply flex flex-col items-center justify-center;
+  @apply space-y-4;
+}
+
+.settings-modal-content h2 {
+  @apply text-2xl font-bold;
+}
+
+.settings-modal-content-item {
+  @apply flex items-center justify-between;
+}
+
+.settings-modal-content-item input {
+  @apply w-16;
+  @apply text-center;
+}
+
+.settings-modal-content-item input:focus,
+.settings-modal-content-item input:hover,
+.settings-modal-content-item input:active,
+.settings-modal-content-item input:focus-visible {
+  @apply outline-none;
+}
+
+.break-todo-list {
+  @apply flex flex-col items-center justify-center space-y-4;
+}
+
+.break-todo-list h2 {
+  @apply text-2xl font-bold;
+}
+
+.break-todo-list input {
+  @apply w-64;
+  @apply text-center;
+}
+
+.break-todo-list input:focus,
+.break-todo-list input:hover,
+.break-todo-list input:active,
+.break-todo-list input:focus-visible {
+  @apply outline-none;
+}
+
+.break-todo-list ul {
+  @apply flex flex-col items-center justify-center space-y-4;
+}
+
+.break-todo-list ul li {
+  @apply flex items-center justify-between;
+  @apply space-x-4;
+}
+
+.break-todo-list ul li .delete {
+  @apply bg-red-500 text-white;
+  @apply cursor-pointer;
+  @apply px-2 py-1;
+  @apply ml-4;
+}
+
+.break-todo-list ul li .delete:hover {
+  @apply bg-red-600;
+}
+
+.break-todo-list ul li .delete:active {
+  @apply bg-red-700;
+}
+
+.break-todo-list ul li .delete:focus-visible {
+  @apply outline-none;
+}
