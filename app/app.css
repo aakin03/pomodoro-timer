@@ -15,8 +15,8 @@ body {
 }
 
 .timer {
-  @apply flex flex-col items-center justify-center space-y-4;
-  @apply w-full;
+  @apply relative flex flex-col items-center space-y-4;
+  @apply h-full;
 }
 
 button,
@@ -50,13 +50,15 @@ button,
   @apply bg-gray-500 text-white;
 }
 
+
 .settings {
   @apply bg-green-500 text-white;
 }
 
 .settings-modal {
-  @apply fixed inset-0 flex items-center justify-center;
-  @apply bg-black/50;
+  @apply absolute inset-0 flex items-center justify-center;
+  @apply bg-black/50 rounded-md;
+  @apply z-50;
 }
 
 .settings-modal-content {
