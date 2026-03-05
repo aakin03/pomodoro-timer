@@ -21,6 +21,9 @@ export function Navbar() {
                     Pomodoro
                 </NavLink>
             </div>
+            <p className="absolute bottom-0 flex flex-col items-center w-full p-4 text-xs text-gray-500 dark:text-gray-400" onClick={() => alert("What are you looking for? o_O")}>
+                version 0.0.1
+            </p>
         </nav>
     );
 }   
